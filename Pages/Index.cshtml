@@ -1,0 +1,160 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<body>
+    <section class="header">
+      
+        <div class="text-box">
+            <h1> Welcome to The Helping hands Foundation</h1>
+            <p> Help us help others</p>
+            <!--<a href="test.cshtml" class="about-btn"> Go to About-us </a>-->
+            
+            <a class="about-btn" asp-area="" asp-page="/About">About Us</a>
+        </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="course">
+        <h1> What do we do ?</h1>
+        <p>We are a foundation that helps people in crysis, we give a helping hand in the most desperate of times <br> we offer: </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3> First Responce </h3>
+                <p> We pride ourselves on being the first responders to any emergency </p>
+
+            </div>
+            <div class="course-col">
+                <h3> Food distribution</h3>
+                <p>When disaster arrives most people do not know where their next meal will come from, we try our best to help with meal packages when such incidences arise</p>
+
+            </div>
+            <div class="course-col">
+                <h3>Shelters</h3>
+                <p>The helping hands foundation helps disaster victims find shelter during crysis. through community outreach programs and government intervention programs</p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- branches -->
+    <section class="campus">
+        <h1> Where can you find us </h1>
+        <p>We are an international foundation but also can be found in your communities, heres where to find us</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="~/images/durban.jpg" height="150">
+                <div class="layer">
+                    <h3> Durban </h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="~/images/jozi.jpeg" height="150">
+                <div class="layer">
+                    <h3> Johannesburg </h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="~/images/GettyImages-1057137024-d3c6daf73fcb48d38ce252f5c6314e96.jpg" height="150">
+                <div class="layer">
+                    <h3> Cape Town </h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!---- facilities----->
+
+    <section class="facilities">
+
+        <h1> Our Impact </h1>
+        <p>here are disaster in which we intervened</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="~/images/kzn floods.jpg" height="150">
+                <h3> KZN Floods 2022 </h3>
+                <p>Our Team helped shelter flood victims of the flood in 2022</p>
+
+            </div>
+
+            <div class="facilities-col">
+                <img src="~/images/cpt-fires.jpg" height="150">
+                <h3> Kayelitsha shack fires </h3>
+                <p>we helped provide housing for those affected by the rouge fires in 2018</p>
+
+            </div>
+
+            <div class="facilities-col">
+                <img src="~/images/food drive.jpeg" height="150">
+                <h3> Food drives </h3>
+                <p>Our foundation helps feed the disadvantaged and homless on the streets</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- complaints and compliments -->
+    <section class="testimonials">
+        <h1> what our clients have to say about us </h1>
+        <p></p>
+
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="~/images/Daily_Sun_Newspaper.jpg">
+                <div>
+                    <p>"The helping hands foundation is true embodiment of Ubuntu"</p>
+                    <h3> Daily Sun</h3>
+                </div>
+            </div>
+
+
+
+            <div class="testimonials-col">
+                <img src="~/images/guardian.jpeg">
+                <div>
+                    <p>an amazing organization with amazing people doing absolutely amazing work</p>
+                    <h3> The Guardian</h3>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="cta">
+        <h1>
+            Wanna keep up with us ?
+        </h1>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbIXnnM2VbQ3qTFiYBzEreuFS8zsgKKHZEyWSkD0lloukhiQ/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+
+
+    <!--footer -->
+    
+
+    
+
+    <!-- this is to toggle the menu -->
+    <script>
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+              navLinks.style.right="0";
+            }
+            function hideMenu(){
+              navLinks.style.right="-200px";
+            }
+    </script>
+
+</body>

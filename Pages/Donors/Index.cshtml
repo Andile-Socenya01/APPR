@@ -1,0 +1,48 @@
+﻿@page
+@model ApprAttempt.Pages.Donors.IndexModel
+@{
+}
+
+<br />
+<h2>List of Donors</h2>
+<a class='btn btn-primary btn-sm' href='/Donors/Donate'> new Donor</a> 
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Donation</th>
+            <th>Disaster</th>
+        </tr>
+      </thead>
+    <tbody>
+        @foreach(var item in Model.listClients)
+            {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.name</td>
+            <td>@item.Donation</td>
+            <td>@item.Disaster</td>
+            
+
+            <td>
+                <a class="btn btn-primary btn-sm" href="/Donors/Edit?id=@item.id">Edit</a>
+                <a class="btn btn-danger btn-sm" href="/Donors/Delete?id=@item.id">Delete</a>
+
+            </td>
+
+
+
+
+
+        </tr>
+            }
+    </tbody>
+
+
+
+
+
+</table>

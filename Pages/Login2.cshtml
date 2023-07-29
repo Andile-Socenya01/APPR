@@ -1,0 +1,113 @@
+﻿@page
+@model ApprAttempt.Pages.Login2Model
+@{
+}
+
+
+
+
+
+   
+
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+
+                <button type="button" class="toggle-btn" onclick="Login()"> Login In</button>
+                <button type="button" class="toggle-btn" onclick="Register()"> Register</button>
+            </div>
+            @*<div class="social-icons">
+                <img src="images\facebook.png">
+                <img src="images\instagram.png">
+                <img src="images\search.png">
+
+
+            </div>*@
+
+
+
+            <form id="Login" class="input-group">
+                
+                <input type="text" class="input-field" asp-action="Email" placeholder="Email" required>
+                <input type="text" class="input-field"  asp-action="Password" placeholder="Enter Password" required>
+                
+                <button id="submit-btn1" type="submit" class="submit-btn"> log in</button>
+
+            </form>
+
+
+
+            <form id="Register" class="input-group">
+
+                <input type="text" class="input-field" asp-action="Name" placeholder="Name" required>
+                <input type="text" class="input-field" asp-action="Surname" placeholder="Surname" required>
+
+                <input type="text" class="input-field" asp-action="Email" placeholder="Email" required>
+                <input type="text" class="input-field" asp-action="Password" placeholder="Password" required>
+                <button id="reg-btn1" type="submit" class="submit-btn"> Register</button>
+
+            </form>
+
+
+        </div>
+    </div>
+
+
+    <script>
+
+	var x = document.getElementById("Login");
+	var y = document.getElementById("Register");
+	var z = document.getElementById("btn");
+
+
+	function Register(){
+
+		x.style.left= "-400px";
+		y.style.left= "50px";
+		z.style.left="110px";
+
+	}
+	function Login(){
+
+		x.style.left= "50px";
+		y.style.left= "450px";
+		z.style.left="0px";
+
+	}
+    </script>
+
+
+<section class="facilities">
+         
+         <h1> Our facilities </h1>
+         <p>heres what you expect to find in our Facilities</p>
+         <div class="row">
+             <div class="facilities-col">
+                 <img src="images/instructors.jpeg" height="150">
+                 <h3> well trained staff </h3>
+                 <p>You can expect to find well trained and skill staff in our facilities</p>
+                 
+             </div>
+             
+             <div class="facilities-col">
+                 <img src="images/gym stuff.jpg" height="150">
+                 <h3> World class Equipment </h3>
+                 <p>We pride ourselves on being world class and our equipment is no different and that's exactly what you'll find in our facilities</p>
+                 
+             </div>
+             
+             <div class="facilities-col">
+                 <img src="images/food.jpg" height="150">
+                 <h3> healthy diet plans </h3>
+                 <p>You can expect to find only the best diet plans in our facilities suitable to your own goals</p>
+                 
+             </div>
+             
+         </div>
+     </section>
+    
+
+
+
